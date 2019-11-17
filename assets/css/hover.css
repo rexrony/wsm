@@ -1,0 +1,3832 @@
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000319}}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_grow\.scss}line{font-family:\000037}}
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/* Shrink */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000326}}
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_shrink\.scss}line{font-family:\000037}}
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000333}}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_pulse\.scss}line{font-family:\0000315}}
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000340}}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_pulse-grow\.scss}line{font-family:\0000311}}
+  .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+/* Pulse Shrink */
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000347}}
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_pulse-shrink\.scss}line{font-family:\0000311}}
+  .hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+    -webkit-animation-name: hvr-pulse-shrink;
+    animation-name: hvr-pulse-shrink;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000354}}
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_push\.scss}line{font-family:\0000315}}
+  .hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+    -webkit-animation-name: hvr-push;
+    animation-name: hvr-push;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000361}}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_pop\.scss}line{font-family:\0000311}}
+  .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Bounce In */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000368}}
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_bounce-in\.scss}line{font-family:\000036}}
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Bounce Out */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000375}}
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_bounce-out\.scss}line{font-family:\000036}}
+  .hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Rotate */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000382}}
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_rotate\.scss}line{font-family:\000037}}
+  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg); }
+
+/* Grow Rotate */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000389}}
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_grow-rotate\.scss}line{font-family:\000037}}
+  .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg); }
+
+/* Float */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\0000396}}
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_float\.scss}line{font-family:\000038}}
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+
+/* Sink */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003103}}
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_sink\.scss}line{font-family:\000038}}
+  .hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003110}}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_bob\.scss}line{font-family:\0000323}}
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate; }
+
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003117}}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_hang\.scss}line{font-family:\0000323}}
+  .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+    -webkit-animation-name: hvr-hang-sink, hvr-hang;
+    animation-name: hvr-hang-sink, hvr-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate; }
+
+/* Skew */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003124}}
+.hvr-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_skew\.scss}line{font-family:\000037}}
+  .hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active {
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg); }
+
+/* Skew Forward */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003131}}
+.hvr-skew-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_skew-forward\.scss}line{font-family:\000038}}
+  .hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg); }
+
+/* Skew Backward */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003138}}
+.hvr-skew-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_skew-backward\.scss}line{font-family:\000038}}
+  .hvr-skew-backward:hover, .hvr-skew-backward:focus, .hvr-skew-backward:active {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003145}}
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-vertical\.scss}line{font-family:\0000331}}
+  .hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003152}}
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-horizontal\.scss}line{font-family:\0000331}}
+  .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble To Bottom Right */
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px); }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px); }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003159}}
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-to-bottom-right\.scss}line{font-family:\0000331}}
+  .hvr-wobble-to-bottom-right:hover, .hvr-wobble-to-bottom-right:focus, .hvr-wobble-to-bottom-right:active {
+    -webkit-animation-name: hvr-wobble-to-bottom-right;
+    animation-name: hvr-wobble-to-bottom-right;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble To Top Right */
+@-webkit-keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003166}}
+.hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-to-top-right\.scss}line{font-family:\0000331}}
+  .hvr-wobble-to-top-right:hover, .hvr-wobble-to-top-right:focus, .hvr-wobble-to-top-right:active {
+    -webkit-animation-name: hvr-wobble-to-top-right;
+    animation-name: hvr-wobble-to-top-right;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble Top */
+@-webkit-keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003173}}
+.hvr-wobble-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-top\.scss}line{font-family:\0000332}}
+  .hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble Bottom */
+@-webkit-keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003180}}
+.hvr-wobble-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-bottom\.scss}line{font-family:\0000332}}
+  .hvr-wobble-bottom:hover, .hvr-wobble-bottom:focus, .hvr-wobble-bottom:active {
+    -webkit-animation-name: hvr-wobble-bottom;
+    animation-name: hvr-wobble-bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Wobble Skew */
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg); }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg); }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg); }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg); }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg); }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003187}}
+.hvr-wobble-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_wobble-skew\.scss}line{font-family:\0000331}}
+  .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+    -webkit-animation-name: hvr-wobble-skew;
+    animation-name: hvr-wobble-skew;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); } }
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003194}}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_buzz\.scss}line{font-family:\0000315}}
+  .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003201}}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_buzz-out\.scss}line{font-family:\0000347}}
+  .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+    -webkit-animation-name: hvr-buzz-out;
+    animation-name: hvr-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Forward */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003208}}
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_forward\.scss}line{font-family:\000037}}
+  .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+
+/* Backward */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003215}}
+.hvr-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/2d-transitions\/_backward\.scss}line{font-family:\000037}}
+  .hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px); }
+
+/* BACKGROUND TRANSITIONS */
+/* Fade */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003223}}
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_fade\.scss}line{font-family:\000038}}
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #000;
+    color: white; }
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75); } }
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003230}}
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_back-pulse\.scss}line{font-family:\0000314}}
+  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #000;
+    background-color: #2098d1;
+    color: white; }
+
+/* Sweep To Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003237}}
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-right\.scss}line{font-family:\000038}}
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-right\.scss}line{font-family:\0000324}}
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-right\.scss}line{font-family:\0000329}}
+    .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+
+/* Sweep To Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003244}}
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-left\.scss}line{font-family:\000038}}
+  .hvr-sweep-to-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-left\.scss}line{font-family:\0000324}}
+  .hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-left\.scss}line{font-family:\0000329}}
+    .hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+
+/* Sweep To Bottom */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003251}}
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-bottom\.scss}line{font-family:\000038}}
+  .hvr-sweep-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-bottom\.scss}line{font-family:\0000324}}
+  .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-bottom\.scss}line{font-family:\0000329}}
+    .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1); }
+
+/* Sweep To Top */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003258}}
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-top\.scss}line{font-family:\000038}}
+  .hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-top\.scss}line{font-family:\0000324}}
+  .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_sweep-to-top\.scss}line{font-family:\0000329}}
+    .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1); }
+
+/* Bounce To Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003265}}
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-right\.scss}line{font-family:\000038}}
+  .hvr-bounce-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-right\.scss}line{font-family:\0000324}}
+  .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-right\.scss}line{font-family:\0000329}}
+    .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Bounce To Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003272}}
+.hvr-bounce-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-left\.scss}line{font-family:\000038}}
+  .hvr-bounce-to-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-left\.scss}line{font-family:\0000324}}
+  .hvr-bounce-to-left:hover, .hvr-bounce-to-left:focus, .hvr-bounce-to-left:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-left\.scss}line{font-family:\0000329}}
+    .hvr-bounce-to-left:hover:before, .hvr-bounce-to-left:focus:before, .hvr-bounce-to-left:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Bounce To Bottom */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003279}}
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-bottom\.scss}line{font-family:\000038}}
+  .hvr-bounce-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-bottom\.scss}line{font-family:\0000324}}
+  .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-bottom\.scss}line{font-family:\0000329}}
+    .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Bounce To Top */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003286}}
+.hvr-bounce-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-top\.scss}line{font-family:\000038}}
+  .hvr-bounce-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-top\.scss}line{font-family:\0000324}}
+  .hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_bounce-to-top\.scss}line{font-family:\0000329}}
+    .hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Radial Out */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003293}}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-out\.scss}line{font-family:\0000310}}
+  .hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-out\.scss}line{font-family:\0000326}}
+  .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-out\.scss}line{font-family:\0000331}}
+    .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+      -webkit-transform: scale(2);
+      transform: scale(2); }
+
+/* Radial In */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003300}}
+.hvr-radial-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-in\.scss}line{font-family:\0000310}}
+  .hvr-radial-in:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e1e1e1;
+    border-radius: 100%;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-in\.scss}line{font-family:\0000326}}
+  .hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_radial-in\.scss}line{font-family:\0000331}}
+    .hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+
+/* Rectangle In */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003307}}
+.hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #000;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-in\.scss}line{font-family:\000039}}
+  .hvr-rectangle-in:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e1e1e1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-in\.scss}line{font-family:\0000324}}
+  .hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-in\.scss}line{font-family:\0000329}}
+    .hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+
+/* Rectangle Out */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003314}}
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-out\.scss}line{font-family:\000039}}
+  .hvr-rectangle-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-out\.scss}line{font-family:\0000324}}
+  .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_rectangle-out\.scss}line{font-family:\0000329}}
+    .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+
+/* Shutter In Horizontal */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003321}}
+.hvr-shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #000;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-horizontal\.scss}line{font-family:\000039}}
+  .hvr-shutter-in-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e1e1e1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-horizontal\.scss}line{font-family:\0000325}}
+  .hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-horizontal\.scss}line{font-family:\0000330}}
+    .hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0); }
+
+/* Shutter Out Horizontal */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003328}}
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-horizontal\.scss}line{font-family:\000039}}
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-horizontal\.scss}line{font-family:\0000325}}
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-horizontal\.scss}line{font-family:\0000330}}
+    .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+
+/* Shutter In Vertical */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003335}}
+.hvr-shutter-in-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #000;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-vertical\.scss}line{font-family:\000039}}
+  .hvr-shutter-in-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e1e1e1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-vertical\.scss}line{font-family:\0000325}}
+  .hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-in-vertical\.scss}line{font-family:\0000330}}
+    .hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0); }
+
+/* Shutter Out Vertical */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003342}}
+.hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-vertical\.scss}line{font-family:\000039}}
+  .hvr-shutter-out-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-vertical\.scss}line{font-family:\0000325}}
+  .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/background-transitions\/_shutter-out-vertical\.scss}line{font-family:\0000330}}
+    .hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1); }
+
+/* BORDER TRANSITIONS */
+/* Border Fade */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003351}}
+.hvr-border-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_border-fade\.scss}line{font-family:\0000312}}
+  .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+    box-shadow: inset 0 0 0 4px #000, 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */ }
+
+/* Hollow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003358}}
+.hvr-hollow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_hollow\.scss}line{font-family:\0000312}}
+  .hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active {
+    background: none; }
+
+/* Trim */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003365}}
+.hvr-trim {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_trim\.scss}line{font-family:\000039}}
+  .hvr-trim:before {
+    content: '';
+    position: absolute;
+    border: white solid 4px;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_trim\.scss}line{font-family:\0000322}}
+  .hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
+    opacity: 1; }
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003372}}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_ripple-out\.scss}line{font-family:\0000319}}
+  .hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_ripple-out\.scss}line{font-family:\0000330}}
+  .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out; }
+
+/* Ripple In */
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1; } }
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003379}}
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_ripple-in\.scss}line{font-family:\0000319}}
+  .hvr-ripple-in:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 4px;
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_ripple-in\.scss}line{font-family:\0000331}}
+  .hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+    -webkit-animation-name: hvr-ripple-in;
+    animation-name: hvr-ripple-in; }
+
+/* Outline Out */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003386}}
+.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_outline-out\.scss}line{font-family:\000039}}
+  .hvr-outline-out:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_outline-out\.scss}line{font-family:\0000321}}
+  .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px; }
+
+/* Outline In */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003393}}
+.hvr-outline-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_outline-in\.scss}line{font-family:\000039}}
+  .hvr-outline-in:before {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 4px;
+    top: -16px;
+    right: -16px;
+    bottom: -16px;
+    left: -16px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_outline-in\.scss}line{font-family:\0000323}}
+  .hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    opacity: 1; }
+
+/* Round Corners */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003400}}
+.hvr-round-corners {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_round-corners\.scss}line{font-family:\000037}}
+  .hvr-round-corners:hover, .hvr-round-corners:focus, .hvr-round-corners:active {
+    border-radius: 1em; }
+
+/* Underline From Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003407}}
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-left\.scss}line{font-family:\000039}}
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-left\.scss}line{font-family:\0000327}}
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0; }
+
+/* Underline From Center */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003414}}
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-center\.scss}line{font-family:\000039}}
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-center\.scss}line{font-family:\0000327}}
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0; }
+
+/* Underline From Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003421}}
+.hvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-right\.scss}line{font-family:\000039}}
+  .hvr-underline-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-from-right\.scss}line{font-family:\0000327}}
+  .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+    left: 0; }
+
+/* Overline From Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003428}}
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-left\.scss}line{font-family:\000039}}
+  .hvr-overline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-left\.scss}line{font-family:\0000327}}
+  .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+    right: 0; }
+
+/* Overline From Center */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003435}}
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-center\.scss}line{font-family:\000039}}
+  .hvr-overline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    top: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-center\.scss}line{font-family:\0000327}}
+  .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+    left: 0;
+    right: 0; }
+
+/* Overline From Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003442}}
+.hvr-overline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-right\.scss}line{font-family:\000039}}
+  .hvr-overline-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    top: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-from-right\.scss}line{font-family:\0000327}}
+  .hvr-overline-from-right:hover:before, .hvr-overline-from-right:focus:before, .hvr-overline-from-right:active:before {
+    left: 0; }
+
+/* Reveal */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003449}}
+.hvr-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_reveal\.scss}line{font-family:\000039}}
+  .hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_reveal\.scss}line{font-family:\0000329}}
+  .hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 4px; }
+
+/* Underline Reveal */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003456}}
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-reveal\.scss}line{font-family:\000039}}
+  .hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_underline-reveal\.scss}line{font-family:\0000328}}
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+/* Overline Reveal */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003463}}
+.hvr-overline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-reveal\.scss}line{font-family:\000039}}
+  .hvr-overline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #000;
+    height: 4px;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/border-transitions\/_overline-reveal\.scss}line{font-family:\0000328}}
+  .hvr-overline-reveal:hover:before, .hvr-overline-reveal:focus:before, .hvr-overline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+/* SHADOW/GLOW TRANSITIONS */
+/* Glow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003472}}
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_glow\.scss}line{font-family:\000037}}
+  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+
+/* Shadow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003479}}
+.hvr-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_shadow\.scss}line{font-family:\000037}}
+  .hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5); }
+
+/* Grow Shadow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003486}}
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_grow-shadow\.scss}line{font-family:\000037}}
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/* Box Shadow Outset */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003493}}
+.hvr-box-shadow-outset {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_box-shadow-outset\.scss}line{font-family:\000037}}
+  .hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); }
+
+/* Box Shadow Inset */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003500}}
+.hvr-box-shadow-inset {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_box-shadow-inset\.scss}line{font-family:\0000310}}
+  .hvr-box-shadow-inset:hover, .hvr-box-shadow-inset:focus, .hvr-box-shadow-inset:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */ }
+
+/* Float Shadow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003507}}
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_float-shadow\.scss}line{font-family:\000038}}
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_float-shadow\.scss}line{font-family:\0000324}}
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_float-shadow\.scss}line{font-family:\0000329}}
+    .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */ }
+
+/* Shadow Radial */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003514}}
+.hvr-shadow-radial {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_shadow-radial\.scss}line{font-family:\000036}}
+  .hvr-shadow-radial:before, .hvr-shadow-radial:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 5px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_shadow-radial\.scss}line{font-family:\0000321}}
+  .hvr-shadow-radial:before {
+    bottom: 100%;
+    background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_shadow-radial\.scss}line{font-family:\0000327}}
+  .hvr-shadow-radial:after {
+    top: 100%;
+    background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/shadow-and-glow-transitions\/_shadow-radial\.scss}line{font-family:\0000333}}
+  .hvr-shadow-radial:hover:before, .hvr-shadow-radial:focus:before, .hvr-shadow-radial:active:before, .hvr-shadow-radial:hover:after, .hvr-shadow-radial:focus:after, .hvr-shadow-radial:active:after {
+    opacity: 1; }
+
+/* SPEECH BUBBLES */
+/* Bubble Top */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003522}}
+.hvr-bubble-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-top\.scss}line{font-family:\000036}}
+  .hvr-bubble-top:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    top: 0;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #e1e1e1 transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-top\.scss}line{font-family:\0000320}}
+  .hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+
+/* Bubble Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003529}}
+.hvr-bubble-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-right\.scss}line{font-family:\000036}}
+  .hvr-bubble-right:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    top: calc(50% - 10px);
+    right: 0;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e1e1e1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-right\.scss}line{font-family:\0000320}}
+  .hvr-bubble-right:hover:before, .hvr-bubble-right:focus:before, .hvr-bubble-right:active:before {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+
+/* Bubble Bottom */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003536}}
+.hvr-bubble-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-bottom\.scss}line{font-family:\000036}}
+  .hvr-bubble-bottom:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-width: 10px 10px 0 10px;
+    border-color: #e1e1e1 transparent transparent transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-bottom\.scss}line{font-family:\0000320}}
+  .hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+
+/* Bubble Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003543}}
+.hvr-bubble-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-left\.scss}line{font-family:\000036}}
+  .hvr-bubble-left:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    top: calc(50% - 10px);
+    left: 0;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e1e1e1 transparent transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-left\.scss}line{font-family:\0000320}}
+  .hvr-bubble-left:hover:before, .hvr-bubble-left:focus:before, .hvr-bubble-left:active:before {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+
+/* Bubble Float Top */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003550}}
+.hvr-bubble-float-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-top\.scss}line{font-family:\000038}}
+  .hvr-bubble-float-top:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left: calc(50% - 10px);
+    top: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #e1e1e1 transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-top\.scss}line{font-family:\0000321}}
+  .hvr-bubble-float-top:hover, .hvr-bubble-float-top:focus, .hvr-bubble-float-top:active {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-top\.scss}line{font-family:\0000326}}
+    .hvr-bubble-float-top:hover:before, .hvr-bubble-float-top:focus:before, .hvr-bubble-float-top:active:before {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px); }
+
+/* Bubble Float Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003557}}
+.hvr-bubble-float-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-right\.scss}line{font-family:\000038}}
+  .hvr-bubble-float-right:before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 10px);
+    right: 0;
+    content: '';
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e1e1e1;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-right\.scss}line{font-family:\0000321}}
+  .hvr-bubble-float-right:hover, .hvr-bubble-float-right:focus, .hvr-bubble-float-right:active {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-right\.scss}line{font-family:\0000326}}
+    .hvr-bubble-float-right:hover:before, .hvr-bubble-float-right:focus:before, .hvr-bubble-float-right:active:before {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px); }
+
+/* Bubble Float Bottom */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003564}}
+.hvr-bubble-float-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-bottom\.scss}line{font-family:\000038}}
+  .hvr-bubble-float-bottom:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left: calc(50% - 10px);
+    bottom: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #e1e1e1 transparent transparent transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-bottom\.scss}line{font-family:\0000321}}
+  .hvr-bubble-float-bottom:hover, .hvr-bubble-float-bottom:focus, .hvr-bubble-float-bottom:active {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-bottom\.scss}line{font-family:\0000326}}
+    .hvr-bubble-float-bottom:hover:before, .hvr-bubble-float-bottom:focus:before, .hvr-bubble-float-bottom:active:before {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px); }
+
+/* Bubble Float Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003571}}
+.hvr-bubble-float-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-left\.scss}line{font-family:\000038}}
+  .hvr-bubble-float-left:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: calc(50% - 10px);
+    left: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e1e1e1 transparent transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-left\.scss}line{font-family:\0000321}}
+  .hvr-bubble-float-left:hover, .hvr-bubble-float-left:focus, .hvr-bubble-float-left:active {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/speech-bubbles\/_bubble-float-left\.scss}line{font-family:\0000326}}
+    .hvr-bubble-float-left:hover:before, .hvr-bubble-float-left:focus:before, .hvr-bubble-float-left:active:before {
+      -webkit-transform: translateX(-10px);
+      transform: translateX(-10px); }
+
+/* ICONS */
+/* Icon Back */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003579}}
+.hvr-icon-back {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-back\.scss}line{font-family:\000036}}
+  .hvr-icon-back .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-back\.scss}line{font-family:\0000317}}
+  .hvr-icon-back:hover .hvr-icon, .hvr-icon-back:focus .hvr-icon, .hvr-icon-back:active .hvr-icon {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+
+/* Icon Forward */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003586}}
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-forward\.scss}line{font-family:\000036}}
+  .hvr-icon-forward .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-forward\.scss}line{font-family:\0000317}}
+  .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+
+/* Icon Down */
+@-webkit-keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+@keyframes hvr-icon-down {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+	75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+/* Icon Down */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003593}}
+.hvr-icon-down {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-down\.scss}line{font-family:\0000318}}
+  .hvr-icon-down .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-down\.scss}line{font-family:\0000326}}
+  .hvr-icon-down:hover .hvr-icon, .hvr-icon-down:focus .hvr-icon, .hvr-icon-down:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-down;
+    animation-name: hvr-icon-down;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+/* Icon Up */
+@-webkit-keyframes hvr-icon-up {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+	75% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+@keyframes hvr-icon-up {
+  0%,
+	50%,
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+	75% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+/* Icon Up */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003600}}
+.hvr-icon-up {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-up\.scss}line{font-family:\0000318}}
+  .hvr-icon-up .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-up\.scss}line{font-family:\0000326}}
+  .hvr-icon-up:hover .hvr-icon, .hvr-icon-up:focus .hvr-icon, .hvr-icon-up:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-up;
+    animation-name: hvr-icon-up;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+/* Icon Spin */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003607}}
+.hvr-icon-spin {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-spin\.scss}line{font-family:\000035}}
+  .hvr-icon-spin .hvr-icon {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-spin\.scss}line{font-family:\0000315}}
+  .hvr-icon-spin:hover .hvr-icon, .hvr-icon-spin:focus .hvr-icon, .hvr-icon-spin:active .hvr-icon {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+/* Icon Drop */
+@-webkit-keyframes hvr-icon-drop {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  51%,
+	100% {
+    opacity: 1; } }
+@keyframes hvr-icon-drop {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  51%,
+	100% {
+    opacity: 1; } }
+/* Icon Drop */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003614}}
+.hvr-icon-drop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-drop\.scss}line{font-family:\0000323}}
+  .hvr-icon-drop .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-drop\.scss}line{font-family:\0000331}}
+  .hvr-icon-drop:hover .hvr-icon, .hvr-icon-drop:focus .hvr-icon, .hvr-icon-drop:active .hvr-icon {
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-animation-name: hvr-icon-drop;
+    animation-name: hvr-icon-drop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Icon Fade */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003621}}
+.hvr-icon-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-fade\.scss}line{font-family:\000035}}
+  .hvr-icon-fade .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-fade\.scss}line{font-family:\0000315}}
+  .hvr-icon-fade:hover .hvr-icon, .hvr-icon-fade:focus .hvr-icon, .hvr-icon-fade:active .hvr-icon {
+    color: #0F9E5E; }
+
+/* Icon Float Away */
+@-webkit-keyframes hvr-icon-float-away {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+    transform: translateY(-1em); } }
+@keyframes hvr-icon-float-away {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+    transform: translateY(-1em); } }
+/* Icon Float Away */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003628}}
+.hvr-icon-float-away {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-float-away\.scss}line{font-family:\0000317}}
+  .hvr-icon-float-away .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-float-away\.scss}line{font-family:\0000327}}
+  .hvr-icon-float-away:hover .hvr-icon, .hvr-icon-float-away:focus .hvr-icon, .hvr-icon-float-away:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-float-away;
+    animation-name: hvr-icon-float-away;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+/* Icon Sink Away */
+@-webkit-keyframes hvr-icon-sink-away {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em); } }
+@keyframes hvr-icon-sink-away {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em); } }
+/* Icon Sink Away */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003635}}
+.hvr-icon-sink-away {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-sink-away\.scss}line{font-family:\0000317}}
+  .hvr-icon-sink-away .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-sink-away\.scss}line{font-family:\0000327}}
+  .hvr-icon-sink-away:hover .hvr-icon, .hvr-icon-sink-away:focus .hvr-icon, .hvr-icon-sink-away:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-sink-away;
+    animation-name: hvr-icon-sink-away;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+/* Icon Grow */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003642}}
+.hvr-icon-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-grow\.scss}line{font-family:\000036}}
+  .hvr-icon-grow .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-grow\.scss}line{font-family:\0000317}}
+  .hvr-icon-grow:hover .hvr-icon, .hvr-icon-grow:focus .hvr-icon, .hvr-icon-grow:active .hvr-icon {
+    -webkit-transform: scale(1.3) translateZ(0);
+    transform: scale(1.3) translateZ(0); }
+
+/* Icon Shrink */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003649}}
+.hvr-icon-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-shrink\.scss}line{font-family:\000036}}
+  .hvr-icon-shrink .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-shrink\.scss}line{font-family:\0000317}}
+  .hvr-icon-shrink:hover .hvr-icon, .hvr-icon-shrink:focus .hvr-icon, .hvr-icon-shrink:active .hvr-icon {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+
+/* Icon Pulse */
+@-webkit-keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+@keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003656}}
+.hvr-icon-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse\.scss}line{font-family:\0000315}}
+  .hvr-icon-pulse .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse\.scss}line{font-family:\0000324}}
+  .hvr-icon-pulse:hover .hvr-icon, .hvr-icon-pulse:focus .hvr-icon, .hvr-icon-pulse:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-pulse;
+    animation-name: hvr-icon-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+/* Icon Pulse Grow */
+@-webkit-keyframes hvr-icon-pulse-grow {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); } }
+@keyframes hvr-icon-pulse-grow {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003663}}
+.hvr-icon-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse-grow\.scss}line{font-family:\0000311}}
+  .hvr-icon-pulse-grow .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse-grow\.scss}line{font-family:\0000320}}
+  .hvr-icon-pulse-grow:hover .hvr-icon, .hvr-icon-pulse-grow:focus .hvr-icon, .hvr-icon-pulse-grow:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-pulse-grow;
+    animation-name: hvr-icon-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+/* Icon Pulse Shrink */
+@-webkit-keyframes hvr-icon-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+@keyframes hvr-icon-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003670}}
+.hvr-icon-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse-shrink\.scss}line{font-family:\0000311}}
+  .hvr-icon-pulse-shrink .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pulse-shrink\.scss}line{font-family:\0000320}}
+  .hvr-icon-pulse-shrink:hover .hvr-icon, .hvr-icon-pulse-shrink:focus .hvr-icon, .hvr-icon-pulse-shrink:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-pulse-shrink;
+    animation-name: hvr-icon-pulse-shrink;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+/* Icon Push */
+@-webkit-keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); } }
+@keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003677}}
+.hvr-icon-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-push\.scss}line{font-family:\0000312}}
+  .hvr-icon-push .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-push\.scss}line{font-family:\0000323}}
+  .hvr-icon-push:hover .hvr-icon, .hvr-icon-push:focus .hvr-icon, .hvr-icon-push:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-push;
+    animation-name: hvr-icon-push;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Icon Pop */
+@-webkit-keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+@keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003684}}
+.hvr-icon-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pop\.scss}line{font-family:\0000312}}
+  .hvr-icon-pop .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-pop\.scss}line{font-family:\0000323}}
+  .hvr-icon-pop:hover .hvr-icon, .hvr-icon-pop:focus .hvr-icon, .hvr-icon-pop:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-pop;
+    animation-name: hvr-icon-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Icon Bounce */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003691}}
+.hvr-icon-bounce {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-bounce\.scss}line{font-family:\000037}}
+  .hvr-icon-bounce .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-bounce\.scss}line{font-family:\0000318}}
+  .hvr-icon-bounce:hover .hvr-icon, .hvr-icon-bounce:focus .hvr-icon, .hvr-icon-bounce:active .hvr-icon {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Icon Rotate */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003698}}
+.hvr-icon-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-rotate\.scss}line{font-family:\000038}}
+  .hvr-icon-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-rotate\.scss}line{font-family:\0000319}}
+  .hvr-icon-rotate:hover .hvr-icon, .hvr-icon-rotate:focus .hvr-icon, .hvr-icon-rotate:active .hvr-icon {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+
+/* Icon Grow Rotate */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003705}}
+.hvr-icon-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-grow-rotate\.scss}line{font-family:\000038}}
+  .hvr-icon-grow-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-grow-rotate\.scss}line{font-family:\0000319}}
+  .hvr-icon-grow-rotate:hover .hvr-icon, .hvr-icon-grow-rotate:focus .hvr-icon, .hvr-icon-grow-rotate:active .hvr-icon {
+    -webkit-transform: scale(1.5) rotate(12deg);
+    transform: scale(1.5) rotate(12deg); }
+
+/* Icon Float */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003712}}
+.hvr-icon-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-float\.scss}line{font-family:\000036}}
+  .hvr-icon-float .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-float\.scss}line{font-family:\0000317}}
+  .hvr-icon-float:hover .hvr-icon, .hvr-icon-float:focus .hvr-icon, .hvr-icon-float:active .hvr-icon {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+
+/* Icon Sink */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003719}}
+.hvr-icon-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-sink\.scss}line{font-family:\000036}}
+  .hvr-icon-sink .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-sink\.scss}line{font-family:\0000317}}
+  .hvr-icon-sink:hover .hvr-icon, .hvr-icon-sink:focus .hvr-icon, .hvr-icon-sink:active .hvr-icon {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+
+/* Icon Bob */
+@-webkit-keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+@keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+@-webkit-keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+@keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003726}}
+.hvr-icon-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-bob\.scss}line{font-family:\0000324}}
+  .hvr-icon-bob .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-bob\.scss}line{font-family:\0000332}}
+  .hvr-icon-bob:hover .hvr-icon, .hvr-icon-bob:focus .hvr-icon, .hvr-icon-bob:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate; }
+
+/* Icon Hang */
+@-webkit-keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+@keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+@-webkit-keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+@keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003733}}
+.hvr-icon-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-hang\.scss}line{font-family:\0000324}}
+  .hvr-icon-hang .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-hang\.scss}line{font-family:\0000332}}
+  .hvr-icon-hang:hover .hvr-icon, .hvr-icon-hang:focus .hvr-icon, .hvr-icon-hang:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+    animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate; }
+
+/* Icon Wobble Horizontal */
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003740}}
+.hvr-icon-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-wobble-horizontal\.scss}line{font-family:\0000332}}
+  .hvr-icon-wobble-horizontal .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-wobble-horizontal\.scss}line{font-family:\0000340}}
+  .hvr-icon-wobble-horizontal:hover .hvr-icon, .hvr-icon-wobble-horizontal:focus .hvr-icon, .hvr-icon-wobble-horizontal:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-wobble-horizontal;
+    animation-name: hvr-icon-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Icon Wobble Vertical */
+@-webkit-keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003747}}
+.hvr-icon-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-wobble-vertical\.scss}line{font-family:\0000332}}
+  .hvr-icon-wobble-vertical .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-wobble-vertical\.scss}line{font-family:\0000340}}
+  .hvr-icon-wobble-vertical:hover .hvr-icon, .hvr-icon-wobble-vertical:focus .hvr-icon, .hvr-icon-wobble-vertical:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-wobble-vertical;
+    animation-name: hvr-icon-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* Icon Buzz */
+@-webkit-keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); } }
+@keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003754}}
+.hvr-icon-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-buzz\.scss}line{font-family:\0000316}}
+  .hvr-icon-buzz .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-buzz\.scss}line{font-family:\0000324}}
+  .hvr-icon-buzz:hover .hvr-icon, .hvr-icon-buzz:focus .hvr-icon, .hvr-icon-buzz:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-buzz;
+    animation-name: hvr-icon-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+/* Icon Buzz Out */
+@-webkit-keyframes hvr-icon-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+@keyframes hvr-icon-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003761}}
+.hvr-icon-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-buzz-out\.scss}line{font-family:\0000348}}
+  .hvr-icon-buzz-out .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/icons\/_icon-buzz-out\.scss}line{font-family:\0000356}}
+  .hvr-icon-buzz-out:hover .hvr-icon, .hvr-icon-buzz-out:focus .hvr-icon, .hvr-icon-buzz-out:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-buzz-out;
+    animation-name: hvr-icon-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+/* CURLS */
+/* Curl Top Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003769}}
+.hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-top-left\.scss}line{font-family:\000036}}
+  .hvr-curl-top-left:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+    /*For IE7-8-9*/
+    z-index: 1000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-top-left\.scss}line{font-family:\0000330}}
+  .hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+    width: 25px;
+    height: 25px; }
+
+/* Curl Top Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003776}}
+.hvr-curl-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-top-right\.scss}line{font-family:\000036}}
+  .hvr-curl-top-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(225deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-top-right\.scss}line{font-family:\0000327}}
+  .hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
+    width: 25px;
+    height: 25px; }
+
+/* Curl Bottom Right */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003783}}
+.hvr-curl-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-bottom-right\.scss}line{font-family:\000036}}
+  .hvr-curl-bottom-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(315deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-bottom-right\.scss}line{font-family:\0000327}}
+  .hvr-curl-bottom-right:hover:before, .hvr-curl-bottom-right:focus:before, .hvr-curl-bottom-right:active:before {
+    width: 25px;
+    height: 25px; }
+
+/* Curl Bottom Left */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/hover\.scss}line{font-family:\00003790}}
+.hvr-curl-bottom-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-bottom-left\.scss}line{font-family:\000036}}
+  .hvr-curl-bottom-left:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/test\/assets\/sass\/effects\/curls\/_curl-bottom-left\.scss}line{font-family:\0000327}}
+  .hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+    width: 25px;
+    height: 25px; }
+
+/*# sourceMappingURL=hover.css.map */

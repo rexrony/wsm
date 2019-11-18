@@ -1626,6 +1626,26 @@ Fold 1
 /**
 Responsive
 ***/
+@media (min-width: 100px) and (max-width: 900px) { header { background-color: transparent; }
+  .navmenu { display: none; }
+  .fold2-lft section.abtwrap { padding: 30px 30px 0 30px; }
+  .fold2-lft section.abtwrap h2 { font-size: 3.5rem; }
+  .fold2-lft .abtwrap2 .exp { margin: 26px auto; }
+  .services-section { padding: 0px; }
+  .services-section h1 { font-size: 3.5rem; }
+  .services-section-circle { height: 100%; padding: 10px 0px; border: none; }
+  .services-section-listing { position: relative; margin: 55px auto; }
+  .services-section-listing ul { -webkit-box-align: center; align-items: center; align-content: center; }
+  .services-section-listing ul li { margin: 0px; position: relative; }
+  .portfolio-container { padding: 0px; }
+  .news-container { padding: 50px 15px; }
+  .news-container-text { margin: 20px 0; }
+  .news-container-two figure { display: block; width: 100%; margin: 0px auto; }
+  .news-container-two figure img { display: block; margin: 0px auto; }
+  .contact-container .col-md-9 { padding: 0px; }
+  .contact-container .get-touch { -webkit-clip-path: none !important; clip-path: none !important; padding: 25px 18px 15px; }
+  .contact-container .get-touch h2 { font-size: 2.4rem; } }
+
 /* ---- stats.js ---- */
 .count-particles { background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: 2.8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-weight: bold; }
 

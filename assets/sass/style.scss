@@ -417,8 +417,41 @@ transition: all 1s ease-in-out;
 /**
 Responsive
 ***/
-@media (min-width:1024px) and (max-width:1390px){
-	
+@media (min-width:100px) and (max-width:900px){
+    header{background-color: transparent;}
+    .navmenu{display: none;}
+    .fold2-lft section.abtwrap{padding: 30px 30px 0 30px;
+    & h2{font-size: 3.5rem;}
+    }
+    .fold2-lft .abtwrap2 .exp{margin: 26px auto;}
+    .services-section{padding:0px;
+        & h1{font-size: 3.5rem;}
+    &-circle{height: 100%; padding: 10px 0px; border:none;
+    }
+    &-listing{position: relative;margin: 55px auto;
+    & ul{    align-items: center;
+        align-content: center;
+    & li{    margin: 0px;position: relative;}
+    }
+    }
+    }
+    .portfolio-container{padding: 0px;}
+    .news-container{    padding:50px 15px;
+        &-text{ margin: 20px 0;}
+        &-two{
+            & figure{display: block; width: 100%;margin:0px auto;
+            & img{display: block; margin:0px auto;}
+            }
+
+
+        }
+    }
+    .contact-container{
+        & .col-md-9{padding: 0px;}
+        & .get-touch{clip-path: none !important;    padding: 25px 18px 15px;
+        & h2{font-size: 2.4rem;}
+        }
+    }
 }
 
 /* ---- stats.js ---- */

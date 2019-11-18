@@ -45,8 +45,8 @@ function imgMin(){
 // JS task: concatenates and uglifies JS files to script.js
 function jsTask(){
     return src([
-        files.jsPath
-        ,'!' + './assets/js/jquery.min.js', // to exclude any specific files
+        files.jsPath ,'!' + './assets/js/jquery.min.js', // to exclude any specific files
+        files.jsPath ,'!' + './assets/js/owl.carousel.js',
         ])
         .pipe(concat('all.js'))
         .pipe(uglify())
@@ -68,7 +68,7 @@ function watchTask(){
     watch([files.scssPath, files.jsPath], 
         series(
             parallel(scssTask,jsTask),
-            //imgMin,
+            imgMin,
            // cacheBustTask, jsTask
         )
     );    
@@ -94,8 +94,8 @@ function watchTask(){
 //   }
 // Export the default Gulp task so it can be run
 // Runs the scss and js tasks simultaneously
-// then runs cacheBust, then watch task cacheBustTask, , jsTask, watchTask  imgMin,
+// then runs cacheBust, then watch task cacheBustTask, , jsTask, watchTask  
 exports.default = series(
-    parallel(scssTask),
-     watchTask
+    parallel(scssTask, jsTask),
+    imgMin,watchTask
 );

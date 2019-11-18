@@ -424,14 +424,26 @@ Responsive
     & h2{font-size: 3.5rem;}
     }
     .fold2-lft .abtwrap2 .exp{margin: 26px auto;}
-    .services-section{padding:0px;
+    .services-section{padding:30px 0;background-size: 100%;
         & h1{font-size: 3.5rem;}
-    &-circle{height: 100%; padding: 10px 0px; border:none;
+    &-circle{height: auto; padding: 10px 0px; border:none;
     }
-    &-listing{position: relative;margin: 55px auto;
+    &-listing{position: relative;margin: 55px auto 0; height:auto;
     & ul{    align-items: center;
-        align-content: center;
-    & li{    margin: 0px;position: relative;}
+        align-content: center; vertical-align: middle;
+    & li{    margin:0px auto 15px 10px !important;position: relative; display: flex; float:left;width: 47% !important; min-height: 60px; overflow: hidden; 
+        & img{position: relative; right:auto !important; top: auto !important; left: auto !important;opacity:1;transform: scale(1) !important;    margin-right: 8px;}
+        & p{display: block; top: 0px !important; left: 0px !important; margin: 0px ; width:auto !important;position: relative;}
+        & span{display:none;}
+    &:nth-child(1){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(2){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(3){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(4){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(5){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(6){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(7){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    &:nth-child(8){top: 0px; left: 0px; right: 0px;  margin: 0px;}
+    }
     }
     }
     }
@@ -450,6 +462,7 @@ Responsive
         & .col-md-9{padding: 0px;}
         & .get-touch{clip-path: none !important;    padding: 25px 18px 15px;
         & h2{font-size: 2.4rem;}
+        &-form button{margin: 5px auto;}
         }
     }
 }

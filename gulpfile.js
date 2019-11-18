@@ -11,9 +11,9 @@ const uglify = require('gulp-uglify');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 var imagemin = require('gulp-imagemin');
-/*const browserSync = require("browser-sync").create(),
+const browserSync = require("browser-sync").create(),
 reload = browserSync.reload;
-
+/*
 //const cssnano = require('cssnano');
 var replace = require('gulp-replace');*/
 
@@ -33,8 +33,8 @@ function scssTask(){
           }).on('error', sass.logError)) // compile SCSS to CSS
         .pipe(postcss([ autoprefixer() ])) // PostCSS plugins , cssnano()
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(dest('dist/css')); // put final CSS in dist folder
-        //.pipe(browserSync.stream());
+        .pipe(dest('dist/css')) // put final CSS in dist folder
+        .pipe(browserSync.stream());
 }
 function imgMin(){
         return  src('./images/*')
@@ -73,10 +73,10 @@ function watchTask(){
         )
     );    
 }
-
-// function browserSync() {
-//     // Run serveSass function when starting the dev server to make sure the SCSS & dev CSS are the same
-//     scssTask();
+/*
+ function browserWatch() {
+     // Run serveSass function when starting the dev server to make sure the SCSS & dev CSS are the same
+     //scssTask();
   
 //     bs.init({
 //       // Dev server will run at localhost:8080
@@ -86,16 +86,25 @@ function watchTask(){
 //         baseDir: '/',
 //       },
 //     });
+	   browserSync.init({
+        server: {
+          // baseDir: "./src",
+           index: "/index.html"
+        }
+    });
   
-//     // These watch for changes to files and reload in the browser
-//     watch('index.html').on('change', browserSync.reload);
-//     watch(scssPath, scssTask);
-//     watch(jsPath).on('change',browserSync.reload);
-//   }
+     // These watch for changes to files and reload in the browser
+     watch('index.html').on('change', browserSync.reload);
+	 watch('dist/css/style.css').on('change',browserSync.reload);
+  
+	 watch(scssPath, scssTask);
+     
+	 
+   }*/
 // Export the default Gulp task so it can be run
 // Runs the scss and js tasks simultaneously
-// then runs cacheBust, then watch task cacheBustTask, , jsTask, watchTask  
+// then runs cacheBust, then watch task cacheBustTask, , jsTask, watchTask  imgMin, 
 exports.default = series(
-    parallel(scssTask, jsTask),
-    imgMin,watchTask
+    parallel(scssTask),
+    watchTask
 );

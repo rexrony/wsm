@@ -25,6 +25,6 @@
   "dependencies": {
     "gulp-dependency-install": "0.0.8",
     "gulp-htmlmin": "^5.0.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
